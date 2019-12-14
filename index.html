@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="home"></div>
+    <a href="#home" class="back-top" title="Back To Top"></a>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="#"><img src="./img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-target="#toggleLink" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleLink">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel slide" data-ride="carousel" id="slideShow">
+
+        <ul class="carousel-indicators">
+            <li data-target="#slideShow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideShow" data-slide-to="1"></li>
+            <li data-target="#slideShow" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/background.png" alt="img">
+                <div class="carousel-caption">
+                    <h3>Hello!! This is First Slide</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolorem!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/background2.png" alt="img">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/background3.png" alt="img">
+            </div>
+        </div>
+
+        <a href="#slideShow" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slideShow" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <div class="container-fluid" id="web">
+        <div class="row jumbotron">
+            <div class="col-sm-12 col-md-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a corporis laboriosam, voluptatem sed porro qui atque provident cupiditate ullam.</p>
+            </div>
+            <div class="col-sm-12 col-md-3">
+                <a href="#"><button class="btn btn-success">Web Hosting</button></a>
+            </div>
+        </div>
+    </div>
+     
+    <div class="container padding" id="about">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4">Welcome to My Bootstrap</h1>
+                <hr>
+            </div>
+            <div class="col-12">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus impedit nam quam quod quibusdam ab accusamus eos repudiandae, odio ipsa iusto ad sit provident minus!</p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="container-fluid padding">
+        <div class="row text-center " id="box">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nesciunt beatae minus repudiandae debitis cupiditate.</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <i class="fas fa-bold"></i>
+                <h3>Bootstrap</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nesciunt beatae minus repudiandae debitis
+                    cupiditate.</p>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+                <i class="fab fa-css3"></i>
+                <h3>CSS 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nesciunt beatae minus repudiandae debitis
+                    cupiditate.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="team">
+        <div class="text-center padding">
+            <h1 class="display-4">Meet Our Team</h1>
+            <hr>
+        </div>
+        <div class="row padding">
+            <div class="col-xs-12 col-md-6 col-lg-3 ">
+                <div class="card text-center">
+                    <div class="font">
+                        <img class="card-img-top" src="./img/team1.png" alt="team1">
+                    </div>
+                    <div class="back">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 ">
+                <div class="card text-center">
+                    <div class="font">
+                        <img class="card-img-top" src="./img/team2.png" alt="team1">
+                    </div>
+                    <div class="back ">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 ">
+                <div class="card text-center">
+                    <div class="font">
+                        <img class="card-img-top" src="./img/team3.png" alt="team1">
+                    </div>
+                    <div class="back ">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="font">
+                        <img class="card-img-top" src="./img/team1.png" alt="team1">
+                    </div>
+                    <div class="back ">
+                        <h1>John Doe</h1>
+                        <p>Architect & Engineer</p>
+                        <p>We love that guy</p>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--The Modal-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center">Smith John</h3>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae dolorum facere, provident repellat sint quibusdam quaerat in incidunt autem similique, iusto natus vero sed ratione quos ipsum eaque esse mollitia? Odit tempora magni nobis iure, atque repellendus reiciendis exercitationem fugiat error molestias placeat provident quidem modi, optio aliquam eaque? Iure! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi soluta labore debitis. Similique ducimus obcaecati voluptatum dolor, at perferendis debitis delectus aperiam magni modi? Voluptate, eaque unde. Adipisci blanditiis voluptate fugiat, ratione dolore repellat atque iure dolorem, officia eligendi praesentium? Aut officia numquam dolore! Sed harum animi dolor sint velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis mollitia eligendi esse, cumque adipisci! Quibusdam veniam, optio itaque cum veritatis ipsam quis nostrum incidunt ab repudiandae officia esse voluptates iste minus et ducimus accusantium distinctio reprehenderit consequatur similique asperiores at illum? Odit libero atque nulla molestias, neque alias. Doloremque?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid box-social padding"  id="contact">
+        <div class="text-center">
+            <h1 class="display-4">Contact</h1>
+            <hr>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+<!--Footer-->
+<footer>
+    <div class="container-fluid padding">
+        <div class="title row text-center">
+            <div class="col-md-4"> 
+                <img src="./img/w3newbie.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <h3>Our Hours</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Service Area</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <hr>
+                <p>238-444-5555</p>
+                <p>email@.com</p>
+                <p>City, State, 10000</p>
+            </div>
+            <div class="col-md-4">
+                <hr>
+                <p><strong>Monday - Friday: </strong>9.00am - 10:00pm</p>
+                <p> <strong>Saturday: </strong>11:00am - 9:00pm</p>
+                <p> <strong>Sunday: </strong>11:00am - 9:00pm</p>
+            </div>
+            <div class="col-md-4">
+                <hr>
+                <p>City, State, 000000</p>
+                <p>City, State, 000000</p>
+                <p>City, State, 000000</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="index.js"></script>
+  </body>
+</html>
